@@ -58,6 +58,128 @@ a {
   margin: 0 auto;
 }
 
+/* intro 2 */
+.image__top {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+}
+.grids5-info img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.image__top a {
+  background: #1dc295;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+.image__top a:nth-child(odd) {
+  background-color: #ffa100;
+}
+.image__top a:nth-child(3) {
+  background: #037ef3;
+}
+.course-price-item h6 {
+  position: absolute;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background: #ff6e65;
+  color: #ffffff;
+  box-shadow: 0px 8px 20px rgb(241 77 93 / 20%);
+  min-width: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -20px;
+  right: 25px;
+}
+.content-top li i {
+  color: #ff6e65;
+}
+.content-main-top {
+  padding: 20px;
+  border: 1px solid var(--border-color-light);
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #fff;
+}
+
+.content-main-top h4 a {
+  color: #060606;
+  font-size: 22px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+}
+.content-main-top h4 a:hover {
+  color: #ff6e65;
+  transition: 0.5s all;
+}
+.content-main-top {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #fff;
+}
+.top-content-boder-top {
+  border-top: 1px solid #eee;
+}
+.ranking__stars li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.ranking__stars i {
+  color: #ffc949;
+  font-size: 14px;
+}
+.ranking__stars .hover_star i {
+  font-weight: 100;
+}
+.ranking__stars .hover_star i:hover {
+  font-weight: 900;
+}
+.fa-caret-right {
+  padding-left: 10px;
+  margin-top: 4px;
+}
+
+.btn-style-primary {
+  color: #ff6e65;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn-style-secondary {
+  background: #ff6e65;
+  color: #fff;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.btn-style-secondary:hover {
+  background: #2b569a;
+  color: #fff;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+
 /* intro3 */
 .intro3__background {
   background: url(../img/bg3.jpg) no-repeat bottom;
