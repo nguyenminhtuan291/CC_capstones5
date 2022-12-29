@@ -139,10 +139,12 @@ a {
 .top-content-boder-top {
   border-top: 1px solid #eee;
 }
-.ranking__stars li {
-  display: inline-block;
+.ranking__stars {
   margin: 0;
   padding: 0;
+}
+.ranking__stars li {
+  display: inline-block;
 }
 .ranking__stars i {
   color: #ffc949;
@@ -270,11 +272,15 @@ a {
 .testi-img img {
   border-radius: 50%;
 }
-.text_left h5 {
+/* .text_left {
+  margin-bottom: 0;
+} */
+.text-left h5 {
   font-weight: 600;
   line-height: 16px;
+  margin-bottom: 0;
 }
-.text_left p {
+.text-left p {
   font-size: 13px;
   color: #707070;
 }
