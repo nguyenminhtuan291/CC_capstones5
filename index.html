@@ -49,7 +49,7 @@
     <!-- link css  -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body id="myBody">
     <section class="header">
       <div class="top-header py-3 ">
         <div class="container-fluid">
@@ -91,7 +91,7 @@
             
               <div class="collapse navbar-collapse bottom-right" id="navbarSupportedContent">
                 <div class="">
-                    <ul class="pb-3 navbar-nav mr-auto">
+                    <ul class="pb-3 navbar-nav mr-auto card__dark">
                         <li class="nav-item">
                           <a style="color:#f55f8d"  class="nav-link home" href="#">HOME<span class="sr-only">(current)</span></a>
                         </li>
@@ -116,8 +116,21 @@
                   <button class="search btn search-btn my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass" ></i></button>
                 </form>
                 </div>
-               
+                <div class="cont-ser-position">
+                  <nav class="navigation">
+                      <div class="theme-switch-wrapper">
+                          <label class="theme-switch" for="checkbox">
+                              <input type="checkbox" id="checkbox">
+                              <button class="mode-container btn search-btn" id="switchButton">
+                                <i class="fa-solid fa-sun"></i>
+                                <i class="fa-regular fa-moon"></i>
+                              </button>
+                          </label>
+                      </div>
+                  </nav>
               </div>
+              </div>
+              
             </nav>
             
           </div>
@@ -197,6 +210,7 @@
           </div>
         </div>
       </section>
+      
   
   
     </section>
@@ -204,7 +218,7 @@
     <section class="intro1">
       <div class="intro1__studious pt-5">
         <div class="container text-center">
-<div>
+<div class="card__dark">
   <h1 class="title-intro1">Welcome to <span>Studious
    
   </span>
@@ -214,7 +228,7 @@
     </h1>
    
 </div>
-          <div class=" row studious-content d-flex pt-5">
+          <div class=" row studious-content d-flex pt-5 card__dark">
             <div class="content col-sm-4">
               <i class="fa-solid fa-graduation-cap"></i>
               <br>
@@ -248,12 +262,12 @@
     <section class="intro2">
       <div class="intro2__getstarted py-5">
         <div class="container py-md-0 ">
-          <div class="title-heading text-center mx-auto mb-5 pb-sm-4">
+          <div class="title-heading text-center mx-auto mb-5 pb-sm-4 card__dark">
             <h3 class="title-main">Pick a Course to <span>Get Started</span></h3>
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6">
-              <div class="blog-card-single">
+              <div class="blog-card__dark-single">
                 <div class="grids5-info position-relative">
                   <img src="./img/c1.jpg" alt="" class="img-fluid" />
                   <div class="image__top">
@@ -293,7 +307,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
-              <div class="blog-card-single">
+              <div class="blog-card__dark-single">
                 <div class="grids5-info position-relative">
                   <img src="./img/c2.jpg" alt="" class="img-fluid" />
                   <div class="image__top">
@@ -334,7 +348,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
-              <div class="blog-card-single">
+              <div class="blog-card__dark-single">
                 <div class="grids5-info position-relative">
                   <img src="./img/c3.jpg" alt="" class="img-fluid" />
                   <div class="image__top">
@@ -374,7 +388,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-5">
-              <div class="blog-card-single">
+              <div class="blog-card__dark-single">
                 <div class="grids5-info position-relative">
                   <img src="./img/c4.jpg" alt="" class="img-fluid" />
                   <div class="image__top">
@@ -414,7 +428,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-5">
-              <div class="blog-card-single">
+              <div class="blog-card__dark-single">
                 <div class="grids5-info position-relative">
                   <img src="./img/c5.jpg" alt="" class="img-fluid" />
                   <div class="image__top">
@@ -454,7 +468,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-5">
-              <div class="blog-card-single">
+              <div class="blog-card__dark-single">
                 <div class="grids5-info position-relative">
                   <img src="./img/c6.jpg" alt="" class="img-fluid" />
                   <div class="image__top">
@@ -569,7 +583,7 @@
     <section class="intro4">
       <div class="introl4__number py-5">
         <div class="container py-md-0 ">
-          <div class="title-heading text-center mx-auto mb-5 pb-sm-4">
+          <div class="title-heading text-center mx-auto mb-5 pb-sm-4 card__dark">
             <h3 class="title-main">Strength in <span>Numbers</span></h3>
             <p class="mt-4 pt-md-2">
               Similique sunt in culpa qui officia deserunt mollitia animi, id
@@ -577,7 +591,7 @@
             </p>
           </div>
           <div class="w3-stats">
-            <div class="row text-center">
+            <div class="row text-center card__dark">
               <div class="col-lg-3 col-sm-6">
                 <div class="border-right">
                   <p><span class="counter">6,300</span></p>
@@ -611,7 +625,7 @@
     <section class="intro5">
       <div class="intro5__feedback py-5">
         <div class="container py-md-0 ">
-          <div class="title-heading text-center mx-auto mb-5 pb-sm-4">
+          <div class="title-heading text-center mx-auto mb-5 pb-sm-4 card__dark">
             <h3 class="title-main">Student Community <span>Feedback</span></h3>
           </div>
           <div class="row content-sec mt-md-5">
@@ -676,7 +690,7 @@
 
     <section class="w3l-team py-sm-5 pb-sm-0 pb-5">
       <div class="container py-md-5 py-4">
-        <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4">
+        <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4 card__dark">
           <h3 class="title-main">World Class <span>Instructors</span></h3>
         </div>
         <div class="row text-center">
@@ -793,7 +807,7 @@
               <div class="col-lg-5 about-2-secs-right mb-lg-0 mb-4 text-center">
                   <img src="./img/image.png" alt="" class="img-fluid img-responsive m-auto" />
               </div>
-              <div class="col-lg-7 about-2-secs-left pr-lg-5">
+              <div class="col-lg-7 about-2-secs-left pr-lg-5 card__dark">
                   <h3 class="title-style mb-sm-3 mb-2">
                       Not Sure Where to Begin? <br>Contact Now, We will Help you</h3>
                   <p>Consectetur adipiscing elit. Aliquam sit amet
@@ -895,6 +909,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
   integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--light and dark-->
+    <script src="./js/index.js"></script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {  
+            autoType(".type-js", 200);
+        });
+    </script>
+
 
   <!-- CODE CHẠY OWLCAROUSEL -->
   <script src="./JS/owl.carousel.min.js"></script>
