@@ -126,68 +126,61 @@ ul {
   cursor: pointer;
   margin-left: 13px;
 }
-.top-left span:hover{
-  color: #f55f8d ;
-  transition: all .5s;
+.top-left span:hover {
+  color: #f55f8d;
+  transition: all 0.5s;
 }
-.top-right i{
-margin-right: 15px;
+.top-right i {
+  margin-right: 15px;
 }
-.top-right i:hover{
-color:#f55f8d  ;
+.top-right i:hover {
+  color: #f55f8d;
 }
 
 .top-content i {
   font-size: 13px;
   padding: 0 5px;
   color: white;
-  transition: all .7s;
+  transition: all 0.7s;
   cursor: pointer;
 }
-
-
 
 a {
   text-decoration: none;
 
   font-size: 15px;
   display: inline-block;
-  transition: all .7s;
+  transition: all 0.7s;
 }
 
 .top-header {
   background-color: #0d369f;
   color: white;
 }
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px) {
   .top-left span {
     display: block;
   }
-    
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .top-left span {
     display: block;
   }
-    
 }
-@media screen and (min-width:769px) and (max-width:1110px) {
+@media screen and (min-width: 769px) and (max-width: 1110px) {
   .top-left span {
     display: block;
-    
   }
-    
 }
-
 
 .bottom-left a {
   font-size: 26px;
   color: #0d369f;
   font-weight: 600;
 }
-.bottom-left a:hover{
-  color: #f55f8d ;
-  transition: all .5s;
+.bottom-left a:hover {
+  color: #f55f8d;
+  transition: all 0.5s;
 }
 
 .bottom-right,
@@ -196,9 +189,8 @@ a {
   padding-right: 10px;
   text-decoration: none;
   font-weight: 600;
-  ;
 }
-#navbarSupportedContent .nav-item a{
+#navbarSupportedContent .nav-item a {
   color: black;
 }
 
@@ -213,38 +205,187 @@ a {
 }
 .search {
   position: relative;
-right: 22%;
-    
+  right: 22%;
 }
-.search i{
+.search i {
   color: #0d369f;
 }
-.search i:hover{
-  color:#f55f8d ;
-  transition: all .5s;
+.search i:hover {
+  color: #f55f8d;
+  transition: all 0.5s;
 }
 
+/* dark-light */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+.theme-switch input {
+  display: none;
+}
+.mode-container {
+  width: 24px;
+  height: 35px;
+  padding: 0px 0;
+  margin-left: -35px;
+  color: #0d369f;
+}
+input:checked + .mode-container i.fa-sun {
+  display: block;
+  cursor: pointer;
+}
+input:checked + .mode-container i.fa-sun {
+  display: block;
+  cursor: pointer;
+}
+.fa-sun:before {
+  transform: rotate(-45deg);
+}
+
+.fa-sun:after,
+.fa-sun:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+
+.fa-sun,
+.fa-sun:after,
+.fa-sun:before {
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+}
+
+.fa-sun {
+  position: relative;
+  transform: scale(--ggs, 1);
+  height: 24px;
+  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat
+      5px -6px/2px 6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px
+      6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px
+      2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+}
+
+input:checked + .mode-container i.fa-moon {
+  display: none;
+}
+.mode-container i.fa-moon {
+  display: block;
+  cursor: pointer;
+}
+.nav-fixed .fa-moon,
+.nav-fixed .fa-moon:after {
+  color: #fdfffc;
+}
+.fa-moon,
+.fa-moon:after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: #000;
+}
+.fa-moon {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(--ggs, 1);
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+}
+#myBody {
+  background-color: white;
+}
+
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+#myBody.dark {
+  background-color: #000;
+}
+
+.dark #navbarSupportedContent .nav-item a {
+  color: #fff;
+}
+
+.dark .intro1__studious h1 {
+  color: #fff;
+}
+
+.dark .title-main {
+  color: #fff;
+}
+
+.dark #switchButton .fa-sun {
+  display: block;
+  color: #fff;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+.dark .content a {
+  color: #fff;
+}
+
+.dark .card__dark {
+  background-color: black;
+  color: #fff;
+}
+.dark .card__dark a h3 {
+  color: #fff;
+}
+
+.dark .intro4 p,
+.dark .intro4 h3,
+.dark .intro4 span {
+  color: #fff;
+}
+.dark .intro4 h3 span {
+  color: #ff6e65;
+}
+.dark .w3l-about-2 h3 {
+  color: #fff;
+}
 /* carousel */
-.carousel-title img{
+.carousel-title img {
   display: block;
   width: 100%;
- 
 }
 
 .carousel-caption--config h5 {
   font-size: 4rem;
   font-weight: bold;
   color: #fff;
- 
- 
 }
-.carousel-title .carousel-caption--config{
- bottom: 15%;
- line-height: 3rem;
- left: 5%;
-text-align: left;
+.carousel-title .carousel-caption--config {
+  bottom: 15%;
+  line-height: 3rem;
+  left: 5%;
+  text-align: left;
 }
-
 
 .btn-style {
   padding: 14px 30px;
@@ -254,16 +395,12 @@ text-align: left;
   border-radius: 4px;
   background: #fff;
   border: none;
-  ;
-
-
 }
 
 .btn-style:hover {
   background-color: #ff6e65;
   color: white;
-  transition: all .5s;
-
+  transition: all 0.5s;
 }
 
 .carouselitem i {
@@ -272,19 +409,17 @@ text-align: left;
   padding-bottom: 25px;
 }
 
-.carouselitem  a {
+.carouselitem a {
   font-size: 24px;
   color: white;
   text-decoration: none;
   font-weight: 500;
   display: block;
-
 }
 
 .item a:hover {
   color: black;
-  transition: all .5s;
-  ;
+  transition: all 0.5s;
 }
 
 .item {
@@ -292,29 +427,25 @@ text-align: left;
   border-radius: 15px;
   margin: 0 10px;
   position: relative;
- 
- 
 }
 
-.carouselitem{
+.carouselitem {
   position: relative;
   margin-top: -57px;
   z-index: 5;
 }
 /* media carousel */
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .carousel-caption--config h5 {
     font-size: 3rem;
     line-height: 3rem;
-    }
-    
+  }
 }
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px) {
   .carousel-caption--config h5 {
     font-size: 2rem;
     line-height: 2rem;
-    }
-    
+  }
 }
 
 .item1 {
@@ -337,12 +468,11 @@ text-align: left;
 .content a {
   text-decoration: none;
   color: black;
-  
 }
 
 .content a:hover {
   color: #ff6e65;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .content i {
@@ -355,39 +485,37 @@ text-align: left;
   border-radius: 50%;
   margin: 20px 0;
 }
-.content h3{
+.content h3 {
   font-size: 24px;
-      line-height: 34px;
-      font-weight: 600;
-  }
-.content h3:hover{
-color: #ff6e65;
-transition: all 0.3s;
+  line-height: 34px;
+  font-weight: 600;
+}
+.content h3:hover {
+  color: #ff6e65;
+  transition: all 0.3s;
 }
 .title-intro1,
-.title-intro-1{
- 
+.title-intro-1 {
   font-size: 40px;
-    line-height: 50px;
-    font-weight: 600;
-    position: relative;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
 }
 .intro1__studious h1 {
   color: black;
-  
 }
 
-.intro1__studious--line{
+.intro1__studious--line {
   width: 60px;
   height: 2px;
-  background-color:#707070; 
+  background-color: #707070;
   position: relative;
   left: 48%;
 }
-.intro1__studious--Line{
+.intro1__studious--Line {
   width: 60px;
   height: 2px;
-  background-color:#707070; 
+  background-color: #707070;
   position: relative;
   left: 50%;
   margin-top: 5px;
@@ -395,11 +523,6 @@ transition: all 0.3s;
 .intro1__studious span {
   color: #ff6e65;
 }
-
-
-
-
-
 
 /* intro 2 */
 .image__top {
@@ -658,11 +781,13 @@ transition: all 0.3s;
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
+      format("embedded-opentype"),
     url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
     url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
     url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
-    url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -710,7 +835,7 @@ transition: all 0.3s;
   list-style-type: none;
 }
 
-.fa-ul>li {
+.fa-ul > li {
   position: relative;
 }
 
@@ -1303,7 +1428,6 @@ h3.title-style {
 }
 
 @media (max-width: 736px) {
-
   .w3l-footer-22 .sub-one-left h6,
   .w3l-footer-22 .sub-two-right h6 {
     margin-bottom: 10px;
@@ -1349,7 +1473,8 @@ h3.title-style {
   }
 }
 
-@media (max-width: 440px) {}
+@media (max-width: 440px) {
+}
 
 @media (max-width: 375px) {
   .right-side {
@@ -1594,7 +1719,6 @@ h3.title-main:after {
 }
 
 @media (max-width: 480px) {
-
   h3.title-main,
   h3.title-main-2 {
     font-size: 35px;
@@ -1603,14 +1727,12 @@ h3.title-main:after {
 }
 
 @media (max-width: 410px) {
-
   h3.title-main,
   h3.title-main-2 {
     font-size: 30px;
     line-height: 40px;
   }
 }
-
 
 /* movetop styling */
 #movetop {
